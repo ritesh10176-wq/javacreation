@@ -298,11 +298,12 @@ public static void atmsystem(){
     System.out.println("Enter userpassword");
     String password = store.next();
     System.out.println("Device is locked , message is hidden ");
+    System.out.println("Enter username to unlock Device");
     String validater=store.next();
-    if(validater==username){
+    if(username.equals(validater)){
     System.out.println("Enter password");
     validater=store.next();
-    if(validater==password)System.out.println("Device unlocked hidden message -> \"              \" what you expected thats why they say its hidden message -_- 0010101... \n" );
+    if(validater.equals(password))System.out.println("Device unlocked hidden message -> \"              \" what you expected thats why they say its hidden message -_- 0010101... \n" );
     else System.out.println("you have failed to enter correct password now face him ->     *--\\-_-/ ---*   \n"); 
    }
     else System.out.println("you have failed to enter correct username now face him ->     *--\\-_-/ ---*   \n"); 
